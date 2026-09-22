@@ -200,10 +200,4 @@ $m' = m \oplus (m \ll w)$ 得到（\texttt{0x00FF00FF}、\texttt{0x0F0F0F0F}、
   \item IEEE 754-2008 单精度浮点格式与 round-to-nearest-even 舍入规则。
 \end{itemize}
 
-\section{实验感受（可选）}
-本实验的乐趣在于把``显然''的运算翻译成受限运算符的组合：溢出判定、
-向偶舍入与浮点的分段处理都要求对补码和 IEEE 754 的编码本身有精确理解，
-而不只是会用。操作数上限（如 bitReverse 的 34 ops）迫使人去找结构性的
-省操作技巧（掩码递推），很有意思。
-
 \end{document}
